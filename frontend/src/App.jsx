@@ -8,7 +8,6 @@ function App() {
   
   useEffect(() => {
     async function fetchData() {
-      // console.log(import.meta.env.VITE_API_URL);
       try {
         const response = await fetch(`${import.meta.env.VITE_API_URL}`);
         if (!response.ok) {
@@ -22,7 +21,6 @@ function App() {
             throw new Error('Network response for posts was not ok');
           }
           const postsResult = await postsResponse.json();
-          console.log("fornecedores cadastrados: " , postsResult);
           setData(postsResult);
         }
       } catch (error) {
@@ -42,12 +40,10 @@ function App() {
   const handleSubmit = (event) => {
     setFornecedores([]);
     event.preventDefault();
-    // Aqui você pode usar o valor de consumoMensal para realizar a lógica desejada
     const fornecedoresFiltrados = data.filter((fornecedor) => {
       return consumoMensal > fornecedor.limite_minimo_kwh;
     });
     setFornecedores(fornecedoresFiltrados);
-    console.log("consumo de ", consumoMensal, "encontrou o fornecedor(es) :", fornecedoresFiltrados)
   };
 
   return (

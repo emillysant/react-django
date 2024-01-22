@@ -42,8 +42,73 @@ Você deverá enviar um email para `victor@clarke.com.br` com o seguinte título
 Foi pensado em trazer uma solução com django para o backend onde o usuário pode cadastrar novos fornecedores usando o rest_framework
 ![image](https://github.com/emillysant/react-django/assets/70452464/afc8dbb0-b123-4df2-ad82-64401720884a)
 
+### Executando o Backend localmente
+1 - Ativando a venv no linux
+```
+.\venv\Scripts\Activate
+```
+2 - Entrando na pasta do projeto
+```
+cd backend
+```
+3 - Instalando as dependencias
+```
+pip install requirements.txt
+```
+4 - Rodando as migrações
+```
+python manage.py makemigrations
+```
+5 - Aplicando as migrações
+```
+python manage.py migrate
+```
+6 - Rodando o serviço API
+```
+python manage.py runserver
+```
+7 - Rodando testes 
+```
+python manage.py test
+```
+### Executando o Backend localmente com dockefile
+1 - Baixando a imagem
+``` 
+docker build -t backend_django .
+```
+2 - Buildando a imagem
+```
+docker run -p 8000:8000 backend_django
+```
+
 
 ## Frontend
 
 O frontend foi desenvolvido em React e  utilizado o axios para requisições http do backend
 ![image](https://github.com/emillysant/react-django/assets/70452464/640f93ae-7fde-43c6-93d9-a29137430cf9)
+
+### Executando o frontend localmente
+
+Obs: Lembre de primeiro rodar o backend
+```
+cd frontend
+```
+```
+npm install
+```
+```
+npm run dev
+```
+```
+npm run test
+```
+
+### Executando o frontend localmente com Dockerfile
+1 - Baixando a imagem
+```
+docker build -t frontend_react .
+```
+2 - Buildando a imagem
+```
+docker run -p 5173:5173 -d frontend_react
+```
