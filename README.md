@@ -36,3 +36,13 @@ Você deverá enviar um email para `victor@clarke.com.br` com o seguinte título
 * O backend tiver testes automatizados
 
 * Os arquivos para que a aplicação funcione no Docker estiverem configurados
+
+## Backend
+
+Foi pensado em trazer uma solução com django para o backend onde o usuário pode cadastrar novos fornecedores usando o rest_framework
+![image](https://github.com/emillysant/react-django/assets/70452464/e41f5acb-7a4f-4ba8-be39-fe5c0bc2a919)
+
+## Frontend
+
+O frontend foi desenvolvido em React e  utilizado o axios para requisições http do backend
+![image](https://github.com/emillysant/react-django/assets/70452464/640f93ae-7fde-43c6-93d9-a29137430cf9)
