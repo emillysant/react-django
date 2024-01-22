@@ -1,5 +1,9 @@
 # React-Django
 
+Solução para o processo seletivo da Clarke Energia.
+Foi escolhido o React usando o vite para o framework frontend e Django para o do backend.
+
+
 # Desafio Clarke Energia
 
 SPA de escolha de fornecedor. Os usuários poderão informar o seu consumo de energia e escolher o melhor fornecedor de acordo com as suas necessidades.
@@ -71,6 +75,10 @@ python manage.py runserver
 ```
 python manage.py test
 ```
+8 - Colete os arquivos estáticos em um diretório acessível ao servidor web.
+```
+python manage.py collectstatic
+```
 ### Executando o Backend localmente com dockefile
 1 - Baixando a imagem
 ``` 
@@ -90,17 +98,25 @@ O frontend foi desenvolvido em React e  utilizado o axios para requisições htt
 ### Executando o frontend localmente
 
 Obs: Lembre de primeiro rodar o backend
+1 - Entrar na pasta do projeto
 ```
 cd frontend
 ```
+2 - Instalando as dependencias
 ```
 npm install
 ```
+3 - Rodando a aplicação 
 ```
 npm run dev
 ```
+4 - Rodando os testes
 ```
 npm run test
+```
+5 - Criando o build da aplicação
+```
+npm run build
 ```
 
 ### Executando o frontend localmente com Dockerfile
