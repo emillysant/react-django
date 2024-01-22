@@ -16,7 +16,6 @@ function App() {
         }
         const result = await response.json();
   
-        // Verifica se a propriedade 'posts' existe no resultado
         if ('posts' in result && result.posts) {
           const postsResponse = await fetch(result.posts);
           if (!postsResponse.ok) {
@@ -70,7 +69,7 @@ function App() {
       {/* Exibir fornecedores disponíveis */}
       {fornecedores.length > 0 && (
         <div>
-          <h2>Fornecedores Disponíveis:</h2>
+          <h2>Fornecedores</h2>
           <ul>
             {fornecedores.map((fornecedor, index) => (
                 <li key={index} className="fornecedor-item">
