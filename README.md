@@ -40,7 +40,8 @@ Você deverá enviar um email para `victor@clarke.com.br` com o seguinte título
 ## Backend
 
 Foi pensado em trazer uma solução com django para o backend onde o usuário pode cadastrar novos fornecedores usando o rest_framework
-![image](https://github.com/emillysant/react-django/assets/70452464/e41f5acb-7a4f-4ba8-be39-fe5c0bc2a919)
+![image](https://github.com/emillysant/react-django/assets/70452464/afc8dbb0-b123-4df2-ad82-64401720884a)
+
 
 ## Frontend
 
