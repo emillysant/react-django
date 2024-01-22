@@ -25,3 +25,5 @@ CMD ["npm", "run", "dev"]
 
 # docker build -t frontend_react .
 # docker run -p 5173:5173 -d frontend_react
+# docker run --network=host -d frontend_react
+

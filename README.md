@@ -1,4 +1,4 @@
-# react-django
+# React-Django
 
 # Desafio Clarke Energia
 
@@ -18,24 +18,24 @@ SPA de escolha de fornecedor. Os usuários poderão informar o seu consumo de en
 
 Você deverá enviar um email para `victor@clarke.com.br` com o seguinte título: `Desafio Clarke Energia | <Seu Nome>`. No email, você deve fornecer 2 links, são eles:
 
-- Link para o repositório principal do projeto (você pode compartilhar a visibilidade do projeto com o usuário victor@clarke.com.br no Github)
-- Link para o projeto disponível online. Aqui recomendamos usar serivços como Netlify/Vercel para hospedar o seu frontend e backend. Sinta-se livre para usar outras plataformas que tenham o mesmo serviço.
+- Link para o repositório principal do projeto (você pode compartilhar a visibilidade do projeto com o usuário victor@clarke.com.br no Github) (v) - repositório publico
+- Link para o projeto disponível online. Aqui recomendamos usar serivços como Netlify/Vercel para hospedar o seu frontend e backend. Sinta-se livre para usar outras plataformas que tenham o mesmo serviço. (x)
 
 # Diferenciais
 
 *Os itens a seguir não são obrigatórios. Lembre-se que o principal diferencial é o desafio ser entregue.* Os candidatos terão uma avaliação melhor se:
 
-* O frontend for feito em React
+* O frontend for feito em React (v)
 
-* O backend for feito em Python
+* O backend for feito em Python (v)
 
-* A aplicação for integrada com Graphql
+* A aplicação for integrada com Graphql(x) - obs: Usei a framework do Django
 
-* O frontend tiver testes automatizados com Jest ou Cypress
+* O frontend tiver testes automatizados com Jest ou Cypress(v)
 
-* O backend tiver testes automatizados
+* O backend tiver testes automatizados(v)
 
-* Os arquivos para que a aplicação funcione no Docker estiverem configurados
+* Os arquivos para que a aplicação funcione no Docker estiverem configurados (v)
 
 ## Backend
 
@@ -80,7 +80,7 @@ docker build -t backend_django .
 ```
 docker run -p 8000:8000 backend_django
 ```
-
+3 - No navegador acesse a porta: http://127.0.0.1:8000/api/
 
 ## Frontend
 
@@ -110,5 +110,6 @@ docker build -t frontend_react .
 ```
 2 - Buildando a imagem
 ```
-docker run -p 5173:5173 -d frontend_react
+docker run --network=host -d frontend_react
 ```
+3 - No navegador acesse a porta: http://localhost:5173/
